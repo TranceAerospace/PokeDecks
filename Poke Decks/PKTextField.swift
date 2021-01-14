@@ -34,7 +34,7 @@ class PKTextField: UITextField {
 		
 		backgroundColor = .tertiarySystemBackground
 		autocorrectionType = .no
-		placeholder = "Enter a card"
+		placeholder = "Search for a card"
 		returnKeyType = .go
 	}
 	

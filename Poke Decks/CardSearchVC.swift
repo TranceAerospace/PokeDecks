@@ -11,7 +11,7 @@ class CardSearchVC: UIViewController {
 		
 		let logoImageView = UIImageView()
 		let usernameTextField = PKTextField()
-		let callToActionButton = PKButton(backgroundColor: .systemGreen, title: "Get Followers")
+		let callToActionButton = PKButton(backgroundColor: UIColor(red: 31/255, green: 98/255, blue: 163/255, alpha: 1.0), title: "Find Card!")
 		
 		var isUserNameEntered: Bool {
 			return !usernameTextField.text!.isEmpty
@@ -41,7 +41,7 @@ class CardSearchVC: UIViewController {
 		
 		@objc func pushFollowerListVC() {
 			guard isUserNameEntered else {
-				presentGFAlertOnMainThread(title: "Empty Username", message: "Please Enter a Username. We need to know who to look for 😀.", buttonTitle: "OK")
+				presentGFAlertOnMainThread(title: "No Card", message: "Please Enter a Pokemon. We need to know who to look for 😀.", buttonTitle: "OK")
 				return
 			}
 			
@@ -57,7 +57,7 @@ class CardSearchVC: UIViewController {
 		func configureLogoImageView() {
 			view.addSubview(logoImageView)
 			logoImageView.translatesAutoresizingMaskIntoConstraints = false
-			logoImageView.image = UIImage(named: "gh-logo")!
+			logoImageView.image = UIImage(named: "pokeball")!
 			
 			NSLayoutConstraint.activate([
 				logoImageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 80),
