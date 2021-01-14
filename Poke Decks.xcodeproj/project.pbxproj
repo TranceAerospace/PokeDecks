@@ -12,10 +12,11 @@
 		9F3ADAD425AFDE7F005AA7AD /* UIVewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */; };
 		9F3ADAD725AFDEDF005AA7AD /* CardListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD625AFDEDF005AA7AD /* CardListVC.swift */; };
 		9F3ADADA25AFE068005AA7AD /* PKAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD925AFE068005AA7AD /* PKAlertVC.swift */; };
+		9F3ADADD25B10186005AA7AD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADADC25B10186005AA7AD /* Card.swift */; };
+		9F3ADAE025B1018D005AA7AD /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADADF25B1018D005AA7AD /* Set.swift */; };
 		9F4C12FA25AFD7A300E4C7F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */; };
 		9F89959025AD447D00BBCDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89958F25AD447D00BBCDB2 /* AppDelegate.swift */; };
 		9F89959225AD447D00BBCDB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */; };
-		9F89959425AD447D00BBCDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89959325AD447D00BBCDB2 /* ViewController.swift */; };
 		9F89959925AD447D00BBCDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F89959825AD447D00BBCDB2 /* Assets.xcassets */; };
 		9F89959C25AD447D00BBCDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F89959A25AD447D00BBCDB2 /* LaunchScreen.storyboard */; };
 		9F8995A725AD463100BBCDB2 /* CardSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8995A625AD463100BBCDB2 /* CardSearchVC.swift */; };
@@ -30,11 +31,12 @@
 		9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVewController+Ext.swift"; sourceTree = "<group>"; };
 		9F3ADAD625AFDEDF005AA7AD /* CardListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListVC.swift; sourceTree = "<group>"; };
 		9F3ADAD925AFE068005AA7AD /* PKAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKAlertVC.swift; sourceTree = "<group>"; };
+		9F3ADADC25B10186005AA7AD /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		9F3ADADF25B1018D005AA7AD /* Set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
 		9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9F89958C25AD447D00BBCDB2 /* Poke Decks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Decks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F89958F25AD447D00BBCDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9F89959325AD447D00BBCDB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9F89959825AD447D00BBCDB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F89959B25AD447D00BBCDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F89959D25AD447D00BBCDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,6 +57,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F3ADAE225B10194005AA7AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9F3ADADC25B10186005AA7AD /* Card.swift */,
+				9F3ADADF25B1018D005AA7AD /* Set.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9F3ADAE325B101A6005AA7AD /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F8995A925AD465000BBCDB2 /* DeckListVC.swift */,
+				9F8995A625AD463100BBCDB2 /* CardSearchVC.swift */,
+				9F3ADAD625AFDEDF005AA7AD /* CardListVC.swift */,
+				9F3ADAD925AFE068005AA7AD /* PKAlertVC.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9F3ADAE425B101C6005AA7AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F3ADAD025AFDD03005AA7AD /* PKButton.swift */,
+				9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */,
+				9F8995AC25AD4A6800BBCDB2 /* PKTitleLabel.swift */,
+				9F8995AF25AFCEB600BBCDB2 /* PKTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9F3ADAE625B10212005AA7AD /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9F3ADAE725B10225005AA7AD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				9F89959825AD447D00BBCDB2 /* Assets.xcassets */,
+				9F89959A25AD447D00BBCDB2 /* LaunchScreen.storyboard */,
+				9F89958F25AD447D00BBCDB2 /* AppDelegate.swift */,
+				9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		9F3ADAE825B10239005AA7AD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		9F89958325AD447C00BBCDB2 = {
 			isa = PBXGroup;
 			children = (
@@ -74,21 +134,12 @@
 		9F89958E25AD447D00BBCDB2 /* Poke Decks */ = {
 			isa = PBXGroup;
 			children = (
-				9F89958F25AD447D00BBCDB2 /* AppDelegate.swift */,
-				9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */,
-				9F8995AC25AD4A6800BBCDB2 /* PKTitleLabel.swift */,
-				9F8995AF25AFCEB600BBCDB2 /* PKTextField.swift */,
-				9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */,
-				9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */,
-				9F3ADAD025AFDD03005AA7AD /* PKButton.swift */,
-				9F8995A925AD465000BBCDB2 /* DeckListVC.swift */,
-				9F8995A625AD463100BBCDB2 /* CardSearchVC.swift */,
-				9F3ADAD625AFDEDF005AA7AD /* CardListVC.swift */,
-				9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */,
-				9F3ADAD925AFE068005AA7AD /* PKAlertVC.swift */,
-				9F89959325AD447D00BBCDB2 /* ViewController.swift */,
-				9F89959825AD447D00BBCDB2 /* Assets.xcassets */,
-				9F89959A25AD447D00BBCDB2 /* LaunchScreen.storyboard */,
+				9F3ADAE825B10239005AA7AD /* Managers */,
+				9F3ADAE725B10225005AA7AD /* Support */,
+				9F3ADAE625B10212005AA7AD /* Extensions */,
+				9F3ADAE425B101C6005AA7AD /* Views */,
+				9F3ADAE325B101A6005AA7AD /* View Controllers */,
+				9F3ADAE225B10194005AA7AD /* Model */,
 				9F89959D25AD447D00BBCDB2 /* Info.plist */,
 			);
 			path = "Poke Decks";
@@ -163,15 +214,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F89959425AD447D00BBCDB2 /* ViewController.swift in Sources */,
 				9F8995AA25AD465000BBCDB2 /* DeckListVC.swift in Sources */,
 				9F3ADAD725AFDEDF005AA7AD /* CardListVC.swift in Sources */,
 				9F8995AD25AD4A6800BBCDB2 /* PKTitleLabel.swift in Sources */,
 				9F3ADACE25AFDC78005AA7AD /* PKBodyLabel.swift in Sources */,
+				9F3ADAE025B1018D005AA7AD /* Set.swift in Sources */,
 				9F89959025AD447D00BBCDB2 /* AppDelegate.swift in Sources */,
 				9F3ADAD425AFDE7F005AA7AD /* UIVewController+Ext.swift in Sources */,
 				9F4C12FA25AFD7A300E4C7F0 /* NetworkManager.swift in Sources */,
 				9F3ADAD125AFDD03005AA7AD /* PKButton.swift in Sources */,
+				9F3ADADD25B10186005AA7AD /* Card.swift in Sources */,
 				9F3ADADA25AFE068005AA7AD /* PKAlertVC.swift in Sources */,
 				9F8995A725AD463100BBCDB2 /* CardSearchVC.swift in Sources */,
 				9F89959225AD447D00BBCDB2 /* SceneDelegate.swift in Sources */,

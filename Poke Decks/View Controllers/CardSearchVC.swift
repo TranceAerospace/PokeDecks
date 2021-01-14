@@ -11,7 +11,7 @@ class CardSearchVC: UIViewController {
 		
 		let logoImageView = UIImageView()
 		let usernameTextField = PKTextField()
-		let callToActionButton = PKButton(backgroundColor: UIColor(red: 31/255, green: 98/255, blue: 163/255, alpha: 1.0), title: "Find Card!")
+		let callToActionButton = PKButton(backgroundColor: UIColor(red: 31/255, green: 98/255, blue: 163/255, alpha: 1.0), title: "Find my Card!")
 		
 		var isUserNameEntered: Bool {
 			return !usernameTextField.text!.isEmpty
