@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F4C12FA25AFD7A300E4C7F0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */; };
 		9F89959025AD447D00BBCDB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89958F25AD447D00BBCDB2 /* AppDelegate.swift */; };
 		9F89959225AD447D00BBCDB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */; };
 		9F89959425AD447D00BBCDB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F89959325AD447D00BBCDB2 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		9F89958C25AD447D00BBCDB2 /* Poke Decks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Poke Decks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F89958F25AD447D00BBCDB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				9F89959125AD447D00BBCDB2 /* SceneDelegate.swift */,
 				9F8995AC25AD4A6800BBCDB2 /* PKTitleLabel.swift */,
 				9F8995AF25AFCEB600BBCDB2 /* PKTextField.swift */,
+				9F4C12F925AFD7A300E4C7F0 /* NetworkManager.swift */,
 				9F8995A925AD465000BBCDB2 /* DeckListVC.swift */,
 				9F8995A625AD463100BBCDB2 /* CardSearchVC.swift */,
 				9F89959325AD447D00BBCDB2 /* ViewController.swift */,
@@ -149,6 +152,7 @@
 				9F8995AA25AD465000BBCDB2 /* DeckListVC.swift in Sources */,
 				9F8995AD25AD4A6800BBCDB2 /* PKTitleLabel.swift in Sources */,
 				9F89959025AD447D00BBCDB2 /* AppDelegate.swift in Sources */,
+				9F4C12FA25AFD7A300E4C7F0 /* NetworkManager.swift in Sources */,
 				9F8995A725AD463100BBCDB2 /* CardSearchVC.swift in Sources */,
 				9F89959225AD447D00BBCDB2 /* SceneDelegate.swift in Sources */,
 				9F8995B025AFCEB600BBCDB2 /* PKTextField.swift in Sources */,
