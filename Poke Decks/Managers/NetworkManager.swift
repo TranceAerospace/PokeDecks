@@ -10,12 +10,13 @@ import Foundation
 class NetworkManager {
 
 	static let shared = NetworkManager()
-	let baseURL = "https://api.github.com/users/"
+	let setURL = "https://api.pokemontcg.io/v1/sets"
+	let cardURL = "https://api.pokemontcg.io/v1/cards?name="
 
 	private init() {}
 
-	func getCards(for set: String, page: Int, completed: @escaping (Result<[Card], GFError>) -> Void) {
-		let endpoint = baseURL + "\(set)/followers?per_page=100&page=\(page)"
+	func getCards(for set: String, page: Int, completed: @escaping (Result<SetList, PKError>) -> Void) {
+		let endpoint = setURL //+ "\(set)/followers?per_page=100&page=\(page)"
 		
 		guard let url = URL(string: endpoint) else {
 			completed(.failure(.invalidUserName))
@@ -35,16 +36,18 @@ class NetworkManager {
 		}
 		
 		guard let data = data else {
+			print("failed to return data")
 			completed(.failure(.invalidData))
 			return
 		}
-		
+			
 		do {
 			let decoder = JSONDecoder()
-			decoder.keyDecodingStrategy = .convertFromSnakeCase
-			let followers = try decoder.decode([Card].self, from: data)
-			completed(.success(followers))
+			//decoder.keyDecodingStrategy = .convertFromSnakeCase
+			let setList = try decoder.decode(SetList.self, from: data)
+			completed(.success(setList))
 		} catch {
+			print("failed to decode data")
 			completed(.failure(.invalidData))
 		}
 		
