@@ -46,7 +46,7 @@ class CardSearchVC: UIViewController {
 			}
 			
 			let cardListVC = CardListVC()
-			cardListVC.cardName = usernameTextField.text
+			cardListVC.setList = usernameTextField.text
 			cardListVC.title = usernameTextField.text
 			navigationController?.pushViewController(cardListVC, animated: true)
 		}
