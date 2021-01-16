@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct CardList: Codable {
+struct CardList: Codable, Hashable {
 	let cards: [Card]
 }
