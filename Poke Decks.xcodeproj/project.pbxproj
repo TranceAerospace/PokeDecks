@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		9F3A31FD25B12921006A224D /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A31FC25B12921006A224D /* SetList.swift */; };
 		9F3A320025B31884006A224D /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A31FF25B31884006A224D /* CardList.swift */; };
+		9F3A320E25B32C31006A224D /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A320D25B32C31006A224D /* CardCell.swift */; };
+		9F3A321125B32C4C006A224D /* CardImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A321025B32C4C006A224D /* CardImageView.swift */; };
+		9F3A321825B38709006A224D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A321725B38709006A224D /* UIHelper.swift */; };
 		9F3ADACE25AFDC78005AA7AD /* PKBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */; };
 		9F3ADAD125AFDD03005AA7AD /* PKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD025AFDD03005AA7AD /* PKButton.swift */; };
 		9F3ADAD425AFDE7F005AA7AD /* UIVewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		9F3A31FC25B12921006A224D /* SetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
 		9F3A31FF25B31884006A224D /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		9F3A320D25B32C31006A224D /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		9F3A321025B32C4C006A224D /* CardImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageView.swift; sourceTree = "<group>"; };
+		9F3A321725B38709006A224D /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKBodyLabel.swift; sourceTree = "<group>"; };
 		9F3ADAD025AFDD03005AA7AD /* PKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKButton.swift; sourceTree = "<group>"; };
 		9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVewController+Ext.swift"; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 				9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */,
 				9F8995AC25AD4A6800BBCDB2 /* PKTitleLabel.swift */,
 				9F8995AF25AFCEB600BBCDB2 /* PKTextField.swift */,
+				9F3A320D25B32C31006A224D /* CardCell.swift */,
+				9F3A321025B32C4C006A224D /* CardImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +158,7 @@
 				9F3ADAE225B10194005AA7AD /* Model */,
 				9F89959D25AD447D00BBCDB2 /* Info.plist */,
 				9F3ADAEA25B10325005AA7AD /* PKError.swift */,
+				9F3A321725B38709006A224D /* UIHelper.swift */,
 			);
 			path = "Poke Decks";
 			sourceTree = "<group>";
@@ -226,6 +235,7 @@
 				9F3A31FD25B12921006A224D /* SetList.swift in Sources */,
 				9F8995AA25AD465000BBCDB2 /* DeckListVC.swift in Sources */,
 				9F3ADAD725AFDEDF005AA7AD /* CardListVC.swift in Sources */,
+				9F3A321825B38709006A224D /* UIHelper.swift in Sources */,
 				9F8995AD25AD4A6800BBCDB2 /* PKTitleLabel.swift in Sources */,
 				9F3ADACE25AFDC78005AA7AD /* PKBodyLabel.swift in Sources */,
 				9F3ADAE025B1018D005AA7AD /* Sets.swift in Sources */,
@@ -238,8 +248,10 @@
 				9F3ADADD25B10186005AA7AD /* Card.swift in Sources */,
 				9F3ADADA25AFE068005AA7AD /* PKAlertVC.swift in Sources */,
 				9F8995A725AD463100BBCDB2 /* CardSearchVC.swift in Sources */,
+				9F3A321125B32C4C006A224D /* CardImageView.swift in Sources */,
 				9F89959225AD447D00BBCDB2 /* SceneDelegate.swift in Sources */,
 				9F8995B025AFCEB600BBCDB2 /* PKTextField.swift in Sources */,
+				9F3A320E25B32C31006A224D /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
