@@ -10,13 +10,14 @@ import Foundation
 class NetworkManager {
 
 	static let shared = NetworkManager()
-	let setURL = "https://api.pokemontcg.io/v1/sets"
+	let setURL = "https://api.pokemontcg.io/v1/sets/"
+	let cardListURL = "https://api.pokemontcg.io/v1/cards?setCode=" //swsh2
 	let cardURL = "https://api.pokemontcg.io/v1/cards?name="
 
 	private init() {}
 
-	func getCards(for set: String, page: Int, completed: @escaping (Result<SetList, PKError>) -> Void) {
-		let endpoint = setURL //+ "\(set)/followers?per_page=100&page=\(page)"
+	func getCards(for set: String, page: Int, completed: @escaping (Result<CardList, PKError>) -> Void) {
+		let endpoint = cardListURL + set
 		
 		guard let url = URL(string: endpoint) else {
 			completed(.failure(.invalidUserName))
@@ -44,7 +45,7 @@ class NetworkManager {
 		do {
 			let decoder = JSONDecoder()
 			//decoder.keyDecodingStrategy = .convertFromSnakeCase
-			let setList = try decoder.decode(SetList.self, from: data)
+			let setList = try decoder.decode(CardList.self, from: data)
 			completed(.success(setList))
 		} catch {
 			print("failed to decode data")

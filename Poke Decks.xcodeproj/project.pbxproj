@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F3A31FD25B12921006A224D /* SetList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A31FC25B12921006A224D /* SetList.swift */; };
+		9F3A320025B31884006A224D /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3A31FF25B31884006A224D /* CardList.swift */; };
 		9F3ADACE25AFDC78005AA7AD /* PKBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */; };
 		9F3ADAD125AFDD03005AA7AD /* PKButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD025AFDD03005AA7AD /* PKButton.swift */; };
 		9F3ADAD425AFDE7F005AA7AD /* UIVewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		9F3A31FC25B12921006A224D /* SetList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetList.swift; sourceTree = "<group>"; };
+		9F3A31FF25B31884006A224D /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
 		9F3ADACD25AFDC78005AA7AD /* PKBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKBodyLabel.swift; sourceTree = "<group>"; };
 		9F3ADAD025AFDD03005AA7AD /* PKButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKButton.swift; sourceTree = "<group>"; };
 		9F3ADAD325AFDE7F005AA7AD /* UIVewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVewController+Ext.swift"; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				9F3ADADC25B10186005AA7AD /* Card.swift */,
 				9F3ADADF25B1018D005AA7AD /* Sets.swift */,
 				9F3A31FC25B12921006A224D /* SetList.swift */,
+				9F3A31FF25B31884006A224D /* CardList.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				9F3ADAEB25B10325005AA7AD /* PKError.swift in Sources */,
 				9F89959025AD447D00BBCDB2 /* AppDelegate.swift in Sources */,
 				9F3ADAD425AFDE7F005AA7AD /* UIVewController+Ext.swift in Sources */,
+				9F3A320025B31884006A224D /* CardList.swift in Sources */,
 				9F4C12FA25AFD7A300E4C7F0 /* NetworkManager.swift in Sources */,
 				9F3ADAD125AFDD03005AA7AD /* PKButton.swift in Sources */,
 				9F3ADADD25B10186005AA7AD /* Card.swift in Sources */,

@@ -8,5 +8,6 @@
 import Foundation
 
 struct Card: Codable {
-	
+	let name: String
+	let imageUrl: String
 }
