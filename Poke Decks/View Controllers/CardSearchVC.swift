@@ -10,11 +10,11 @@ import UIKit
 class CardSearchVC: UIViewController {
 		
 		let logoImageView = UIImageView()
-		let usernameTextField = PKTextField()
+		let setNameTextField = PKTextField()
 		let callToActionButton = PKButton(backgroundColor: UIColor(red: 31/255, green: 98/255, blue: 163/255, alpha: 1.0), title: "Find my Card!")
 		
 		var isUserNameEntered: Bool {
-			return !usernameTextField.text!.isEmpty
+			return !setNameTextField.text!.isEmpty
 		}
 		
 
@@ -46,8 +46,8 @@ class CardSearchVC: UIViewController {
 			}
 			
 			let cardListVC = CardListVC()
-			cardListVC.setList = usernameTextField.text
-			cardListVC.title = usernameTextField.text
+			cardListVC.cardName = setNameTextField.text
+			cardListVC.title = setNameTextField.text
 			navigationController?.pushViewController(cardListVC, animated: true)
 		}
 		
@@ -68,14 +68,14 @@ class CardSearchVC: UIViewController {
 		}
 		
 		func configureTextField() {
-			view.addSubview(usernameTextField)
-			usernameTextField.delegate = self
+			view.addSubview(setNameTextField)
+			setNameTextField.delegate = self
 			
 			NSLayoutConstraint.activate([
-				usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
-				usernameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-				usernameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
-				usernameTextField.heightAnchor.constraint(equalToConstant: 50)
+				setNameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
+				setNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+				setNameTextField.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+				setNameTextField.heightAnchor.constraint(equalToConstant: 50)
 			])
 		}
 		
