@@ -26,6 +26,7 @@ class CardCell: UICollectionViewCell {
 	
 	func set(card: Card) {
 		pokemonNameLabel.text = card.name
+		pokemonImageVIew.downloadImage(from: card.imageUrl)
 	}
 	
 	

@@ -10,4 +10,5 @@ import Foundation
 struct Card: Codable, Hashable {
 	let name: String
 	let imageUrl: String
+	//let imageUrlHiRes: String
 }
