@@ -5,7 +5,7 @@
 //  Created by Mark Trance on 1/13/21.
 //
 
-import Foundation
+import UIKit
 
 class NetworkManager {
 
@@ -13,6 +13,8 @@ class NetworkManager {
 	let setURL = "https://api.pokemontcg.io/v1/sets/"
 	let cardListURL = "https://api.pokemontcg.io/v1/cards?setCode=" //swsh2
 	let cardURL = "https://api.pokemontcg.io/v1/cards?name="
+	
+	let cache = NSCache<NSString, UIImage>()
 
 	private init() {}
 
